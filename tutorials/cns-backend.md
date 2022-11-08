@@ -4,7 +4,7 @@
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/22322698-cd32951a-a24f-4fd5-a9fb-2e26f057532c?action=collection%2Ffork&collection-url=entityId%3D22322698-cd32951a-a24f-4fd5-a9fb-2e26f057532c%26entityType%3Dcollection%26workspaceId%3D0df0c5b3-6c0a-47ee-ab26-8ba0139261e4)
 
 ## Swagger
-<a href="http://101.42.88.184/swagger/"><img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="drawing" style="width:200px;" /></a>
+<a href="http://101.42.88.184/swagger/cns-backend/"><img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="drawing" style="width:200px;" /></a>
 
 ## 第三方接入交互图
 
