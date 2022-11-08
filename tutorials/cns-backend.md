@@ -6,6 +6,10 @@
 ## Swagger
 <a href="http://101.42.88.184/swagger/"><img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="drawing" style="width:200px;" /></a>
 
+## 第三方接入交互图
+
+![](https://note.youdao.com/yws/api/personal/file/WEB3b48793e4e39f246359a449cbdecc7eb?method=download&shareKey=7747d123352bb7fbd4f1273639661bac)
+
 ## API相关枚举类型：
 | 枚举           | 意义           | 值                                                       |
 |----------------|----------------|----------------------------------------------------------|
