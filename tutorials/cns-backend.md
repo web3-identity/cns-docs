@@ -20,7 +20,7 @@
 | refund_state   | 支付退款状态   | NIL SUCCESS CLOSED PROCESSING ABNORMAL                   |
 | tx_state       | web3交易状态   | INIT SEND_FAILED EXECUTE_FAILED EXECUTED_SUCCESS         |
 
-### tx_state 详细释义
+### tx_state
 - INIT 未开始
 - SEND_FAILED 发送失败，表示交易未发送，通常是由于Estimate失败，tx_error表示错误详情
 - EXECUTE_FAILED 执行失败，表示交易发送成功但交易执行失败（概率非常低，这种的失败原因是由于Estimate时的合约状态与交易执行时的合约状态不一致）
@@ -42,10 +42,14 @@
 使用方法：
 - 在请求头中增加 `X-Api-Key`
 
+## 其它
 ### 交易相关信息
-交易信息相关字段为
-- [tx_state 交易状态](#tx_state-详细释义)
+交易信息相关字段有
+- [tx_state 交易状态](#tx_state)
 - tx_hash 交易哈希
 - tx_error 交易错误信息
 
 > 当交易成功时 tx_hash 才有值，交易失败时 tx_error 才有值
+### CNS合约
+- [cns合约](https://github.com/web3-identity/cns-contracts)
+- [测试网合约部署地址](https://github.com/web3-identity/cns-contracts/tree/master/docs#conflux-core-testnet)
