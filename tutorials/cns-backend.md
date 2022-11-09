@@ -50,6 +50,3 @@
 - tx_error 交易错误信息
 
 > 当交易成功时 tx_hash 才有值，交易失败时 tx_error 才有值
-### CNS合约
-- [cns合约](https://github.com/web3-identity/cns-contracts)
-- [测试网合约部署地址](https://github.com/web3-identity/cns-contracts/tree/master/docs#conflux-core-testnet)
