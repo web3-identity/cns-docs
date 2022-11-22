@@ -1,23 +1,15 @@
-# CNS-Docs
+---
+description: .web3漫游指南
+---
 
-The Conflux Name Service (CNS) is a distributed, open, and extensible naming system based on the Conflux blockchain.
+# 简介
 
-CNS’s job is to map human-readable names like ‘alice.web3’ to machine-readable identifiers such as Conflux addresses, other cryptocurrency addresses, content hashes, and metadata. CNS also supports ‘reverse resolution’, making it possible to associate metadata such as canonical names or interface descriptions with Conflux addresses.
+### Web3 用户名是什么
 
-CNS has similar goals to DNS, the Internet’s Domain Name Service, but has significantly different architecture due to the capabilities and constraints provided by the Conflux blockchain. Like DNS, CNS operates on a system of dot-separated hierarchical names called domains, with the owner of a domain having full control over subdomains.
+.web3是基于Conflux区块链分布式、开源、开放、跨链、去中心化的用户名命名系统。
 
-Top-level domains, like ‘.web3’ and ‘.test’, are owned by smart contracts called registrars, which specify rules governing the allocation of their subdomains. Anyone may, by following the rules imposed by these registrar contracts, obtain ownership of a domain for their own use.
+互联网的繁荣靠的是人们的社交互动，而这一切都是基于人们的身份互动、认同。人们使用身份进行互动时，需要的是人类可读性更好的标识，并能体现自己的个性和品牌，而非仅仅是机器可读的地址。因此，.web3提供了以.web3为后缀的全局唯一的命名系统，.web3用户名消除了人们需要复制或输入冗长的区块链地址，将人类可读性体验更好的用户名称映射到机器可读的标识，就像传统域名指向网站的IP地址一样。
 
-Because of the hierarchal nature of CNS, anyone who owns a domain at any level may configure subdomains - for themselves or others - as desired. For instance, if Alice owns 'alice.web3', she can create 'pay.alice.web3' and configure it as she wishes.
+.web3用户名作为全局唯一且去中心化的命名系统，拥有.web3用户名意味着你拥有了这个账户的完整控制权和使用权，你可以使用其进行身份认证、域名解析、加密资产转账等场景，同时，.web3用户名是具有广泛兼容性的去中心化个人账户系统，可以解析多个公链地址、Web2账号、邮箱、DNS等等，并支持任意的解析记录类型。
 
-CNS is deployed on the Conflux main network and test networks.
-
-You can try CNS out for yourself now by using the CNS Manager App, or by using any of the many CNS enabled applications on our homepage.
-
-CNS contracts is forked from ENS, and is fully compatible with ENS.
-
-Currently CNS's top domain is `.web3`
-
-## CNS Architecture
-
-CNS architecture is same as [ENS's architecture](https://docs.ens.domains/#ens-architecture).
+.web3的用户名系统结构：（image）
