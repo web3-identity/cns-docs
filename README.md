@@ -1,4 +1,4 @@
-# CNS-Docs
+# Introduction
 
 The Conflux Name Service (CNS) is a distributed, open, and extensible naming system based on the Conflux blockchain.
 
