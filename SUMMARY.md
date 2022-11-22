@@ -1,14 +1,6 @@
 # Table of contents
 
-* [简介](README.md)
-* [常见问题](chang-jian-wen-ti/README.md)
-  * [注册问题](chang-jian-wen-ti/zhu-ce-wen-ti.md)
-  * [管理问题](chang-jian-wen-ti/guan-li-wen-ti.md)
-  * [注册商](chang-jian-wen-ti/zhu-ce-shang.md)
-* [Introduction](<README (1).md>)
-* [术语](shu-yu.md)
-* [定价/费用](ding-jia-fei-yong.md)
-* [注册规则](zhu-ce-gui-ze.md)
+* [Introduction](README.md)
 * [CNS Deployments](Deployment.md)
 * [FAQs](faqs.md)
 
