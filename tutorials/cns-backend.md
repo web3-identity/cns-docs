@@ -27,14 +27,18 @@
 - EXECUTED_SUCCESS 执行成功，表示交易发送成功而且交易执行成功
 ## 第三方接入
 ### 注册域名
-1. 调用合约Web3RegisterController的makeCommit方法生成commit hash
-2. 调用合约Web3RegisterController的commit方法提交commithash
-3. 调用cns-backend的api [POST /v0/registers](http://101.42.88.184:8090/swagger_ui_dist/#/Registers/MakeRegisterOrder) 注册域名
-4. 调用cns-backend的api [GET /v0/registers/:commit_hash](http://101.42.88.184:8090/swagger_ui_dist/#/Registers/Register) 查询注册状态
+1. 调用合约Web3RegisterController的`rentPriceInFiat`方法计算价格，例如要计算 `conflux.web3` 域名一年期的价格，`rentPriceInFiat("conflux", 3600*24*365)`; 得到的结果有两个字段 `base` 和 `premium`; 实际价格为 `(base + premium)/1000000`, 单位为“分”
+2. 调用合约Web3RegisterController的`makeCommit`方法生成commit hash
+3. 调用合约Web3RegisterController的`commit`方法提交commit hash
+4. 用户支付
+5. 调用cns-backend的api [POST /v0/registers](http://101.42.88.184:8090/swagger_ui_dist/#/Registers/MakeRegisterOrder) 注册域名
+6. 调用cns-backend的api [GET /v0/registers/:commit_hash](http://101.42.88.184:8090/swagger_ui_dist/#/Registers/Register) 查询注册状态
 
 ### 域名续费
-1. 调用cns-backend的api [POST /v0/renews](http://101.42.88.184:8090/swagger_ui_dist/#/Renews/Renew) 续费
-2. 调用cns-backend的api [GET /v0/renews/:id](http://101.42.88.184:8090/swagger_ui_dist/#/Renews/GetRenew) 查询续费状态
+1. 域名续费价格计算方式同注册域名相同，如 `conflux.web3` 域名续费一年期的价格为`rentPriceInFiat("conflux", 3600*24*365)`
+2. 用户支付
+3. 调用cns-backend的api [POST /v0/renews](http://101.42.88.184:8090/swagger_ui_dist/#/Renews/Renew) 续费
+4. 调用cns-backend的api [GET /v0/renews/:id](http://101.42.88.184:8090/swagger_ui_dist/#/Renews/GetRenew) 查询续费状态
 
 ### 身份认证
 "注册域名"及"域名续费" API 都需要身份认证，使用ApiKey方式，ApiKey 由官方人工发放
