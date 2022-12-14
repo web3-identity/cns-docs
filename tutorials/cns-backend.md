@@ -1,3 +1,7 @@
+---
+description: 对于想在产品中支持域名售卖和注册的项目，请参见此文档；
+---
+
 # CNS-Open-Service
 
 ## Postman
@@ -35,9 +39,9 @@
 ### 注册域名
 
 {% hint style="danger" %}
-域名注册目前只支持英文字符和 Emoji；
+务必在调用 registers 前，对用户所输入的内容进行**敏感词**过滤；
 
-建议在调用 registers 前，对用户所输入的内容进行**敏感词**过滤；
+域名注册目前只支持英文字符和 Emoji；
 {% endhint %}
 
 1. 调用合约Web3RegisterController的`rentPriceInFiat`方法计算价格，例如要计算 `conflux.web3` 域名一年期的价格，`rentPriceInFiat("conflux", 3600*24*365)`; 得到的结果有两个字段 `base` 和 `premium`; 实际价格为 `(base + premium)/1000000`, 单位为“分”

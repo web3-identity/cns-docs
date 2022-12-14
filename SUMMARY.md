@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [💡 Quick Start](quick-start.md)
+* [Quick Start 💡💡💡](quick-start.md)
 * [CNS Deployments](Deployment.md)
 * [FAQs](faqs.md)
 
@@ -10,6 +10,7 @@
 * [Name Processing](https://docs.ens.domains/contract-api-reference/name-processing)
 * [Registry](https://docs.ens.domains/contract-api-reference/ens)
 * [ReverseRegistrar](https://docs.ens.domains/contract-api-reference/reverseregistrar)
+* [Public Resolver](contract-api-reference/public-resolver.md)
 * [PublicResolver](https://docs.ens.domains/contract-api-reference/publicresolver)
 * [.web3 Permanent Registrar](contract-api-reference/.web3-permanent-registrar/README.md)
   * [Registrar](https://docs.ens.domains/contract-api-reference/.eth-permanent-registrar/registrar)
