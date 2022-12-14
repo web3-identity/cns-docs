@@ -1,4 +1,4 @@
-# Public Resolver
+# PublicResolver
 
 PublicResolver 是一个套公共的、符合 .web3 用户名的标准解析器，允许所有人查询正反向解析记录，允许所有者更新解析记录。
 
