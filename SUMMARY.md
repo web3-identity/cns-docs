@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Quick Start](quick-start.md)
+* [💡 Quick Start](quick-start.md)
 * [CNS Deployments](Deployment.md)
 * [FAQs](faqs.md)
 
