@@ -16,10 +16,16 @@ description: 快速找到你想要的接入方式
 
 * 比如：在用户账户中心或好友列表中，不再展示复杂的地址，而是以 .web3 用户名作为昵称；
 
+
+
 实现正反向解析，请参阅：
 
-{% content-ref url="Deployment.md" %}
-[Deployment.md](Deployment.md)
+{% hint style="danger" %}
+为了解决一些容错性的问题，我们对反向解析做了些调整和优化，详情请参阅 PublicResolver 文档
+{% endhint %}
+
+{% content-ref url="contract-api-reference/publicresolver.md" %}
+[publicresolver.md](contract-api-reference/publicresolver.md)
 {% endcontent-ref %}
 
 
