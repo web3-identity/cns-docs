@@ -10,12 +10,14 @@ PublicResolver 是一个套公共的、符合 .web3 用户名的标准解析器�
 
 .web3 用户名对**查询反向解析记录**做了改进，为了解决一些容错性的问题；
 
-在查询反向解析记录时，建议您使用 <mark style="color:red;">`REVERSE_RECORDS`</mark> 工具合约来查询用户的反向解析记录；
+在查询反向解析记录时，建议您使用 <mark style="color:red;">`REVERSE_RECORDS`</mark> 工具合约的 <mark style="color:red;">`getNames`</mark> <mark style="color:red;"></mark><mark style="color:red;"></mark> 来查询用户的反向解析记录；
 
-<mark style="color:red;">`REVERSE_RECORDS`</mark> 工具合约有以下特性：
+[REVERSE\_RECORDS](https://github.com/web3-identity/cns-contracts/blob/master/contracts/utils/ReverseRecords.sol) 工具合约有以下特性：
 
 1. 支持批量查询反向解析记录；
 2. 支持正反向解析一致性的校验；当正反向解析设置不一致，则反向解析会返回空；
+
+相见：[Github CNS ReverseRecords.sol](https://github.com/web3-identity/cns-contracts/blob/master/contracts/utils/ReverseRecords.sol)
 
 {% hint style="danger" %}
 为了防止正反向解析设置不一致，给普通用户带来困扰，建议您使用<mark style="color:red;">`REVERSE_RECORDS`</mark>工具合约查询用户反向解析记录
