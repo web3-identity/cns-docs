@@ -46,7 +46,7 @@ description: 对于想在产品中支持域名售卖和注册的项目，请参�
 
 1. 调用合约Web3RegisterController的`rentPriceInFiat`方法计算价格，例如要计算 `conflux.web3` 域名一年期的价格，`rentPriceInFiat("conflux", 3600*24*365)`; 得到的结果有两个字段 `base` 和 `premium`; 实际价格为 `(base + premium)/1000000`, 单位为“分”
 2. 在注册域名时需要同时设置正向解析，方法为将commit.data设置合约方法`PublicResolver.setAddr(bytes32 node, uint coinType, bytes memory a)`的ABI编码。 参数`node`为域名的`node`，`coinType`为`conflux`的`CoinType`值`503`, `a`为正向解析到的地址
-   1. node 计算使用库`@ensdomains/eth-ens-namehash`的`hash`方法。
+   1. node 计算使用库`@ensdomains/eth-ens-namehash`的`hash`方法。如域名为 `conflux.web3`, 则 `node` 为 `require("@ensdomains/eth-ens-namehash").hash("conflux.web3")`
    2. ABI计算使用[iface.encodeFunctionData](https://docs.ethers.org/v5/api/utils/abi/interface/#Interface--encoding)
 3. 调用合约Web3RegisterController的`makeCommit`方法生成commit hash
    > commit.data设置为第2步生成的值
