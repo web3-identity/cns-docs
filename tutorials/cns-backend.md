@@ -1,5 +1,5 @@
 ---
-description: 对于想在产品中支持域名售卖和注册的项目，请参见此文档；
+description: 若需在产品中支持域名售卖和注册，请参考此文档；
 ---
 
 # CNS-Open-Service
@@ -57,8 +57,8 @@ description: 对于想在产品中支持域名售卖和注册的项目，请参�
       const data = iface.encodeFunctionData("setAddr",[node,503,target])
    ```
 
-3. 调用合约Web3RegisterController的`makeCommit`方法生成commit hash
-   > commit.data设置为第2步生成的值
+3.  调用合约Web3RegisterController的`makeCommit`方法生成commit hash
+    > commit.data设置为第2步生成的值
 4. 调用合约Web3RegisterController的`commit`方法提交commit hash
 5. 用户支付
 6. 调用cns-backend的api [POST /v0/registers](http://101.42.88.184:8090/swagger\_ui\_dist/#/Registers/MakeRegisterOrder) 注册域名
