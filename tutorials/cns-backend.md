@@ -18,14 +18,14 @@ description: 对于想在产品中支持域名售卖和注册的项目，请参�
 
 ## API相关枚举类型：
 
-| 枚举              | 意义       | 值                                                        |
-| --------------- | -------- | -------------------------------------------------------- |
-| trade\_provider | 法币支付运营商  | （wechat, alipay, ...）                                    |
+| 枚举            | 意义           | 值                                                       |
+| --------------- | -------------- | -------------------------------------------------------- |
+| trade\_provider | 法币支付运营商 | （wechat, alipay, ...）                                  |
 | trade\_type     | 法币支付类型   | native/h5                                                |
-| order\_state    | 订单状态     | init, made, success; null 表示全部                           |
-| trade\_state    | 支付状态     | SUCCESS REFUND NOTPAY CLOSED REVOKED USERPAYING PAYERROR |
+| order\_state    | 订单状态       | init, made, success; null 表示全部                       |
+| trade\_state    | 支付状态       | SUCCESS REFUND NOTPAY CLOSED REVOKED USERPAYING PAYERROR |
 | refund\_state   | 支付退款状态   | NIL SUCCESS CLOSED PROCESSING ABNORMAL                   |
-| tx\_state       | web3交易状态 | INIT SEND\_FAILED EXECUTE\_FAILED EXECUTED\_SUCCESS      |
+| tx\_state       | web3交易状态   | INIT SEND\_FAILED EXECUTE\_FAILED EXECUTED\_SUCCESS      |
 
 ### tx\_state
 
@@ -46,8 +46,17 @@ description: 对于想在产品中支持域名售卖和注册的项目，请参�
 
 1. 调用合约Web3RegisterController的`rentPriceInFiat`方法计算价格，例如要计算 `conflux.web3` 域名一年期的价格，`rentPriceInFiat("conflux", 3600*24*365)`; 得到的结果有两个字段 `base` 和 `premium`; 实际价格为 `(base + premium)/1000000`, 单位为“分”
 2. 在注册域名时需要同时设置正向解析，方法为将commit.data设置合约方法`PublicResolver.setAddr(bytes32 node, uint coinType, bytes memory a)`的ABI编码。 参数`node`为域名的`node`，`coinType`为`conflux`的`CoinType`值`503`, `a`为正向解析到的地址
-   1. node 计算使用库`@ensdomains/eth-ens-namehash`的`hash`方法。如域名为 `conflux.web3`, 则 `node` 为 `require("@ensdomains/eth-ens-namehash").hash("conflux.web3")`
+   1. node 计算使用库`@ensdomains/eth-ens-namehash`的`hash`方法。如域名为 `conflux.web3`, 则 `node` 为 `require("@ensdomains/eth-ens-namehash").hash("conflux.web3") `
    2. ABI计算使用[iface.encodeFunctionData](https://docs.ethers.org/v5/api/utils/abi/interface/#Interface--encoding)
+
+   如要生成解析`conflux.web3`到地址`0x7971d8defa89bf68ff4142b2bb1e1e3866927b36`的data； 示例代码如下：
+   ```js
+      const target = "0x7971d8defa89bf68ff4142b2bb1e1e3866927b36"; // 要正向解析到的地址
+      const node = require("@ensdomains/eth-ens-namehash").hash("conflux.web3");
+      const iface = new ethers.utils.Interface(["function setAddr(bytes32 node, uint coinType, bytes memory a)"]);
+      const data = iface.encodeFunctionData("setAddr",[node,503,target])
+   ```
+
 3. 调用合约Web3RegisterController的`makeCommit`方法生成commit hash
    > commit.data设置为第2步生成的值
 4. 调用合约Web3RegisterController的`commit`方法提交commit hash
