@@ -32,3 +32,7 @@
 * [cns-contracts](https://github.com/web3ns/cns-contracts)
 * [web3ns.js](https://github.com/web3-identity/web3ns.js)
 * [address-encoder](https://github.com/web3-identity/address-encoder)
+
+## Developer Guide
+
+* [DApp Integration Demo](developer-guide/dapp-integration-demo.md)
