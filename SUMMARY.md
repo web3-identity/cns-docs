@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Quick Start 💡💡💡](quick-start.md)
+* [💡 Quick Start](quick-start.md)
 * [CNS Deployments](Deployment.md)
 * [FAQs](faqs.md)
 
@@ -35,5 +35,5 @@
 
 ## Easy Development
 
-* [DApp Integration Demo](easy-development/dapp-integration-demo.md)
-* [CNS Util Tools](easy-development/cns-util-tools.md)
+* [🛠 DApp Integration Demo](easy-development/dapp-integration-demo.md)
+* [🛠 CNS Util Tools](easy-development/cns-util-tools.md)
