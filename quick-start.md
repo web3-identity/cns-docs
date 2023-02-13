@@ -44,13 +44,15 @@ description: 快速找到你想要的接入方式
 
 
 
-## 快速接入 Demo
+## 易于开发
 
 请参考：
 
-{% content-ref url="developer-guide/dapp-integration-demo.md" %}
-[dapp-integration-demo.md](developer-guide/dapp-integration-demo.md)
+{% content-ref url="easy-development/dapp-integration-demo.md" %}
+[dapp-integration-demo.md](easy-development/dapp-integration-demo.md)
 {% endcontent-ref %}
 
-
+{% content-ref url="easy-development/cns-util-tools.md" %}
+[cns-util-tools.md](easy-development/cns-util-tools.md)
+{% endcontent-ref %}
 

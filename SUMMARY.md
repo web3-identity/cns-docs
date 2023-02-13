@@ -33,6 +33,7 @@
 * [web3ns.js](https://github.com/web3-identity/web3ns.js)
 * [address-encoder](https://github.com/web3-identity/address-encoder)
 
-## Developer Guide
+## Easy Development
 
-* [DApp Integration Demo](developer-guide/dapp-integration-demo.md)
+* [DApp Integration Demo](easy-development/dapp-integration-demo.md)
+* [CNS Util Tools](easy-development/cns-util-tools.md)
