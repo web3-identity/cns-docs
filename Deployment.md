@@ -4,7 +4,26 @@
 
 ## Testnet
 
-#### 最新部署（2022/12/13）
+**最新合约（2023/2/9）**
+
+The CNS registry is deployed at: `cfxtest:acemru7fu1u8brtyn3hrtae17kbcd4pd9u2m761bta`
+
+And other main contract address are:
+
+* REVERSE\_REGISTRAR: `cfxtest:acfarpzehntpre0thg8x7dp0ajw4ms328pe1mm17vd`
+* BASE\_REGISTRAR: `cfxtest:acg08bujp0kmsup1zk11c9mad7zd6648eynbcjtndm`
+* STATIC\_METADATA\_SERVICE: `cfxtest:acabg4pkfentf6pugssc10e3jdvn6r4u2pz27nwne3`
+* NAME\_WRAPPER: `cfxtest:acapc3y2j7atme3bawvaex18hs36tn40uu5h6j3mtu`
+* CFX\_PRICE\_ORACLE: `cfxtest:acd5ganc3tmc8p2935u1rbz6fp207gm59ybd8rxxnx`
+* STABLE\_ORACLE: `cfxtest:acdeywdrjb48ast7e4gug5pv3t30t4h1wam6mnggs6`
+* WEB3\_CONTROLLER: `cfxtest:aca1858y5a9fnyx9rxd1c9knr517cd0e6afzzhgj01`
+* PUBLIC\_RESOLVER: `cfxtest:acbfyf69zaxau5a23w10dgyrmb0hrz4p9pewn6sejp`
+* NAME\_WHITELIST: `cfxtest:acex1d5fm2tcd2s9wd7p1ak9t47advbwvud2yhjw3v`
+* FIFS\_REGISTRAR: `cfxtest:achbbpdja6c3f4s6efuh7ckr85p5pf8xhesep50jv6`
+* REVERSE\_RECORDS: `cfxtest:acgddsj3kah2f4f4c6959bvc4732f4juyj90h0zmg2`
+* CNS\_UTIL: `cfxtest:aca4w63ypgup8tryphprzfcrh5kh0hpbgasb2z3s0j`
+
+#### 旧版合约（2022/12/13）
 
 The CNS registry is deployed at：`cfxtest:acd3rm7y183trhpzvz8m3y72kx1abk4d0jh842585a`
 
