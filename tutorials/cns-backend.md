@@ -36,6 +36,9 @@ description: 若需在产品中支持域名售卖和注册，请参考此文档�
 
 ## 第三方接入
 
+### Cns-backend API
+
+* 测试环境 BaseUrl： https://app-test.web3verse.space/v0
 ### 注册域名
 
 {% hint style="danger" %}
