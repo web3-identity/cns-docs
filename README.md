@@ -1,23 +1,56 @@
-# Introduction
+# 如何注册 .web3 用户名？
 
-The Conflux Name Service (CNS) is a distributed, open, and extensible naming system based on the Conflux blockchain.
+#### 步骤一：
 
-CNS’s job is to map human-readable names like ‘alice.web3’ to machine-readable identifiers such as Conflux addresses, other cryptocurrency addresses, content hashes, and metadata. CNS also supports ‘reverse resolution’, making it possible to associate metadata such as canonical names or interface descriptions with Conflux addresses.
+访问 .web3 用户名网站：[https://app.web3verse.space/](https://app.web3verse.space/)（以下截图来自测试环境）
 
-CNS has similar goals to DNS, the Internet’s Domain Name Service, but has significantly different architecture due to the capabilities and constraints provided by the Conflux blockchain. Like DNS, CNS operates on a system of dot-separated hierarchical names called domains, with the owner of a domain having full control over subdomains.
+#### 步骤二：
 
-Top-level domains, like ‘.web3’ and ‘.test’, are owned by smart contracts called registrars, which specify rules governing the allocation of their subdomains. Anyone may, by following the rules imposed by these registrar contracts, obtain ownership of a domain for their own use.
+输入你想要注册的用户名，并点击注册
 
-Because of the hierarchal nature of CNS, anyone who owns a domain at any level may configure subdomains - for themselves or others - as desired. For instance, if Alice owns 'alice.web3', she can create 'pay.alice.web3' and configure it as she wishes.
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>此用户名可以注册</p></figcaption></figure>
 
-CNS is deployed on the Conflux main network and test networks.
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>如果此用户名被注册了，会提示已注册</p></figcaption></figure>
 
-You can try CNS out for yourself now by using the CNS Manager App, or by using any of the many CNS enabled applications on our homepage.
+#### 步骤三：
 
-CNS contracts is forked from ENS, and is fully compatible with ENS.
+进入注册流程，首先要连接账户
 
-Currently CNS's top domain is `.web3`
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-## CNS Architecture
+可以从 Fluent、AnyWeb、Cellar 选择任意一种方式，授权 Web3 账户登录
 
-CNS architecture is same as [ENS's architecture](https://docs.ens.domains/#ens-architecture).
+* AnyWeb 和 Cellar 都提供了通过手机号登录的方式；
+* Fluent 是一个无托管的 Web3 的浏览器插件钱包工具；
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>选择任何一种钱包连接 </p></figcaption></figure>
+
+#### 步骤四：在钱包中确认
+
+点击申请后，在弹出的钱包确认框中确认交易；
+
+等待转圈圈结束后，即进入支付步骤；
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p>等待转圈圈结束即可</p></figcaption></figure>
+
+#### 步骤五：
+
+进入支付流程后，通过支付宝扫码完成支付即可
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+#### 注册成功：
+
+稍微等待一段时间后，看到以下页面注册完成啦！
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+**最后一步：**
+
+想要使用用户名的全部功能，则需要将用户名 “设为展示”（反向解析）
+
+点击按钮后，在钱包中确认完成即可
+
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+完成以上全部操作，你的用户名就设置完成了！

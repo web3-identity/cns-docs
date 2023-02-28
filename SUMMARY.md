@@ -1,9 +1,16 @@
 # Table of contents
 
-* [Introduction](README.md)
-* [💡 Quick Start](quick-start.md)
-* [CNS Deployments](Deployment.md)
-* [FAQs](faqs.md)
+## User Tutorial
+
+* [如何注册 .web3 用户名？](README.md)
+* [必须要知道关于正向解析和反向解析](user-tutorial/bi-xu-yao-zhi-dao-guan-yu-zheng-xiang-jie-xi-he-fan-xiang-jie-xi.md)
+
+## Dev Tutorial
+
+* [Introduction](dev-tutorial/readme.md)
+* [💡 Quick Start](dev-tutorial/quick-start.md)
+* [CNS Deployments](dev-tutorial/deployment.md)
+* [FAQs](dev-tutorial/faqs.md)
 
 ## Contract API Reference
 

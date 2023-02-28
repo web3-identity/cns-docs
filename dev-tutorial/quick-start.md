@@ -24,8 +24,8 @@ description: 快速找到你想要的接入方式
 为了解决一些容错性的问题，我们对反向解析做了些调整和优化，详情请参阅 PublicResolver 文档
 {% endhint %}
 
-{% content-ref url="contract-api-reference/publicresolver.md" %}
-[publicresolver.md](contract-api-reference/publicresolver.md)
+{% content-ref url="../contract-api-reference/publicresolver.md" %}
+[publicresolver.md](../contract-api-reference/publicresolver.md)
 {% endcontent-ref %}
 
 
@@ -38,8 +38,8 @@ description: 快速找到你想要的接入方式
 
 详情请参阅：
 
-{% content-ref url="tutorials/cns-backend.md" %}
-[cns-backend.md](tutorials/cns-backend.md)
+{% content-ref url="../tutorials/cns-backend.md" %}
+[cns-backend.md](../tutorials/cns-backend.md)
 {% endcontent-ref %}
 
 
@@ -48,11 +48,11 @@ description: 快速找到你想要的接入方式
 
 请参考：
 
-{% content-ref url="easy-development/dapp-integration-demo.md" %}
-[dapp-integration-demo.md](easy-development/dapp-integration-demo.md)
+{% content-ref url="../easy-development/dapp-integration-demo.md" %}
+[dapp-integration-demo.md](../easy-development/dapp-integration-demo.md)
 {% endcontent-ref %}
 
-{% content-ref url="easy-development/cns-util-tools.md" %}
-[cns-util-tools.md](easy-development/cns-util-tools.md)
+{% content-ref url="../easy-development/cns-util-tools.md" %}
+[cns-util-tools.md](../easy-development/cns-util-tools.md)
 {% endcontent-ref %}
 

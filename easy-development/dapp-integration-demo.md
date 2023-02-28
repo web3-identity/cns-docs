@@ -1,4 +1,4 @@
-# DApp Integration Demo
+# 🛠 DApp Integration Demo
 
 这里有一个 DApp 接入 CNS 的 Demo，可以作为参考。
 
