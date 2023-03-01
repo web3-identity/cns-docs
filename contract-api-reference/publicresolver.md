@@ -17,7 +17,7 @@ PublicResolver 是一个套公共的、符合 .web3 用户名的标准解析器�
 1. 支持批量查询反向解析记录；
 2. 支持正反向解析一致性的校验；当正反向解析设置不一致，则反向解析会返回空；
 
-相见：[Github CNS ReverseRecords.sol](https://github.com/web3-identity/cns-contracts/blob/master/contracts/utils/ReverseRecords.sol)
+详见：[Github CNS ReverseRecords.sol](https://github.com/web3-identity/cns-contracts/blob/master/contracts/utils/ReverseRecords.sol)
 
 {% hint style="danger" %}
 为了防止正反向解析设置不一致，给普通用户带来困扰，建议您使用<mark style="color:red;">`REVERSE_RECORDS`</mark>工具合约查询用户反向解析记录
