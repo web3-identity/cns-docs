@@ -2,7 +2,8 @@
 
 ## User Tutorial
 
-* [如何注册 .web3 用户名？](README.md)
+* [什么是 .web3 用户名](README.md)
+* [如何注册 .web3 用户名？](<README (1).md>)
 * [必须要知道关于正向解析和反向解析](user-tutorial/bi-xu-yao-zhi-dao-guan-yu-zheng-xiang-jie-xi-he-fan-xiang-jie-xi.md)
 
 ## Dev Tutorial
