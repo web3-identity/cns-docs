@@ -54,10 +54,12 @@ description: 若需在产品中支持域名售卖和注册，请参考此文档�
 
    如要生成解析`conflux.web3`到地址`0x7971d8defa89bf68ff4142b2bb1e1e3866927b36`的data； 示例代码如下：
    ```js
-      const target = "0x7971d8defa89bf68ff4142b2bb1e1e3866927b36"; // 要正向解析到的地址
+      const ethers = require("ethers");
+      const sdk = require("js-conflux-sdk");
+      const target = "cfxtest:aany9gz5hnpz9a22dkmkpcr276v932wze6cr821wd4"; // 要正向解析到的地址
       const node = require("@ensdomains/eth-ens-namehash").hash("conflux.web3");
-      const iface = new ethers.utils.Interface(["function setAddr(bytes32 node, uint coinType, bytes memory a)"]);
-      const data = iface.encodeFunctionData("setAddr",[node,503,target])
+      const iface = new ethers.Interface(["function setAddr(bytes32 node, uint coinType, bytes memory a)"]);
+      const data = iface.encodeFunctionData("setAddr",[node,503,sdk.format.hexAddress(target)])
    ```
 
 3.  调用合约Web3RegisterController的`makeCommit`方法生成commit hash
