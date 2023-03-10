@@ -52,7 +52,7 @@ description: 若需在产品中支持域名售卖和注册，请参考此文档�
    1. node 计算使用库`@ensdomains/eth-ens-namehash`的`hash`方法。如域名为 `conflux.web3`, 则 `node` 为 `require("@ensdomains/eth-ens-namehash").hash("conflux.web3") `
    2. ABI计算使用[iface.encodeFunctionData](https://docs.ethers.org/v5/api/utils/abi/interface/#Interface--encoding)
 
-   如要生成解析`conflux.web3`到地址`0x7971d8defa89bf68ff4142b2bb1e1e3866927b36`的data； 示例代码如下：
+   如要生成解析`conflux.web3`到地址`cfxtest:aany9gz5hnpz9a22dkmkpcr276v932wze6cr821wd4`的data； 示例代码如下：
    ```js
       const ethers = require("ethers");
       const sdk = require("js-conflux-sdk");
