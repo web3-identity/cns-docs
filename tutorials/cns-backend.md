@@ -85,6 +85,10 @@ description: 若需在产品中支持域名售卖和注册，请参考此文档�
 
 * 在请求头中增加 `X-Api-Key`
 
+### 开发工具
+- javascript: [web3ns](https://github.com/web3-identity/web3ns.js), [js-conflux-sdk](https://github.com/Conflux-Chain/js-conflux-sdk)
+- golang: [cfxabigen](https://docs.confluxnetwork.org/go-conflux-sdk/cfxabigen)
+- java: [java-conflux-sdk](https://github.com/Conflux-Chain/java-conflux-sdk)
 ## 其它
 
 ### 交易相关信息
